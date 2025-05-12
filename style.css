@@ -14,7 +14,7 @@ body {
 .banner-container {
     width: 100%;
     min-height: 700px; 
-    background-image: url('assets/image70.png');
+    background-image: url('../assets/ITbanner.png');
     background-size: cover;
     background-position: center;
     position: relative;

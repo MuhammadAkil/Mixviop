@@ -14,7 +14,7 @@ body {
 .banner-container {
     width: 100%;
     min-height: 700px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/image70.png');
+    background-image:url('../assets/ITservices.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -164,7 +164,7 @@ nav a {
 /* Footer Section */
 .footer-section {
     background-color: #1a2e01;
-    background-image:  url('assets/Rectangle 34624363.png');
+    background-image:  url('assets/ITContact.png');
     background-size: cover;
     background-position: center;
     color: white;
