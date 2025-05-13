@@ -25,21 +25,18 @@ body {
 }
 
 .breadcrumb {
-  color: #22c55e;
-  font-size: 20px;
-  margin-bottom: 4rem;
+  color: white;
+  padding: 100px 50px 20px;
+  display: flex;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-size: 20px;
   cursor: pointer;
 }
 
-.breadcrumb-2 {
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 4rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+.breadcrumb .active {
   cursor: pointer;
+  color: #4caf50;
 }
 
 .hero-section::before {
