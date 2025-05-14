@@ -44,10 +44,12 @@
             <button class="stay-connected">Stay Connected</button>
         </header>
         <div class="container">
-            <div class="breadcrumb">
-                <span>Home</span> &nbsp;>&nbsp; <span class="active">Contact</span>
+            <div class="Title">
+                <div class="breadcrumb">
+                    <span>Home</span> &nbsp;>&nbsp; <span class="active">Contact</span>
+                </div>
+                <h1 class="page-2-heading">Get in touch</h1>
             </div>
-            <h1 class="page-2-heading">Get in touch</h1>
             <div class="cards">
                 <div class="card">
                     <img src="../assets/Card_image.png" alt="Tech Support" class="profile-img">
@@ -138,6 +140,16 @@
             <div class="shadow-line-2"></div>
             <form>
                 <input type="text" placeholder="Name" required>
+                <div class="form-group phone-group">
+                        <select class="country-code" required="">
+                            <option value="+352">+352</option>
+                            <option value="+32">+32</option>
+                            <option value="+33">+33</option>
+                            <option value="+49">+49</option>
+                            <option value="+49">+92</option>
+                        </select>
+                        <input type="tel" placeholder="77 78 87567" required="">
+                    </div>
                 <input type="email" placeholder="Email" required>
                 <textarea placeholder="Your question" required></textarea>
                 <button type="submit" class="btn green full">Submit →</button>
