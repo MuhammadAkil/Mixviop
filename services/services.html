@@ -11,35 +11,40 @@
 </head>
 
 <body>
+    <header class="sticky-header">
+        <div class="footer-logo">
+            <img src="../assets/fb66327c-f0f4-4d73-866e-e1968d106fd9 1.jpg" alt="MIXVOIP Logo" class="logo-placeholder">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="Project.html">Cloud PBX</a></li>
+                <li><a href="#">Internet</a></li>
+                <li><a href="#">Use Cases</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <button class="stay-connected">Stay Connected</button>
+    </header>
+
     <div class="banner-container">
-        <header>
-            <div class="footer-logo">
-                <img src="../assets/fb66327c-f0f4-4d73-866e-e1968d106fd9 1.jpg" alt="MIXVOIP Logo" class="logo-placeholder">
+        <div class="centered-content">
+            <div class="breadcrumb">
+                <span>Home</span>  >  <span>Internet</span>  >  <span class="active">IT Services</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="Project.html">Cloud PBX</a></li>
-                    <li><a href="#">Internet</a></li>
-                    <li><a href="#">Use Cases</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </nav>
-            <button class="stay-connected">Stay Connected</button>
-        </header>
 
-        <div class="breadcrumb">
-            <span>Home</span> &nbsp;>&nbsp; <span>Internet</span> &nbsp;>&nbsp; <span class="active">Mobile connectivity</span>
+            <div class="hero">
+                <h1>IT Services</h1>
+                <p>Our IT services help streamline, support, and secure your tech infrastructure—so you can focus on growing your business. From managed IT and on-demand support to cybersecurity and cloud solutions, we’ve got your needs covered.</p>
+            </div>
         </div>
-
-        <div class="hero">
-            <h1>IT Services</h1>
-            <p>Our IT services help streamline, support, and secure your tech infrastructure—so you can focus on growing your business. From managed IT and on-demand support to cybersecurity and cloud solutions, we’ve got your needs covered.</p>
-        </div>
-
-
     </div>
 
+    <div class="related-heading">
+        <h2>Our IT Solutions</h2>
+    </div>
+    <div class="shadow-line2">
+    </div>
     <div class="why-section">
         <div class="use-cases-grid">
             <div class="use-case-card">
@@ -119,7 +124,7 @@
                     <img src="../assets/Cloud-Storage-Drive--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
                 </div>
                 <h3>Cloud & Server Management</h3>
-                <div class="support-item">
+                <div class="ookup-item">
                     <img src="../assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
                     <h4 class="support-text">Azure Cloud Management</h4>
                 </div>
@@ -151,7 +156,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="container">
         <div class="partners-section">
@@ -187,7 +191,7 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Lenovo_Logo_2015.svg" alt="Lenovo logo" class="partner-logo">
                         </li>
                         <li class="partner-item" data-categories="network cybersecurity">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco logo" class="partner-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia.commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco logo" class="partner-logo">
                         </li>
                         <li class="partner-item" data-categories="software infrastructure cybersecurity">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM logo" class="partner-logo">
@@ -355,7 +359,6 @@
                 });
             });
         });
-
 
         document.addEventListener('DOMContentLoaded', () => {
             const track = document.querySelector('.carousel-track');
