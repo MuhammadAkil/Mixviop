@@ -309,16 +309,37 @@ body {
 .unique-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
+  /* gap: 2rem; */
   padding: 0 1rem;
   grid-template-columns: repeat(1, 1fr);
 }
 
+
+.unique-card {
+  padding: 2rem 1rem;
+  max-width: 296px;
+  text-align: center;
+}
 .unique-card:hover {
   background-color: white;
-  padding: 2rem 1rem;
+  transition: all;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px rgba(0.5, 0, 0, .09);
+  border: #56b635 1px solid;
+  cursor: pointer;
+}
+.unique-card:nth-child(3) {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0.5, 0, 0, .09);
+  border: #56b635 1px solid;
+}
+
+/* Remove default effect from 3rd when *any* card is hovered */
+.unique-cards:hover .unique-card:nth-child(3):not(:hover) {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 
 .card-icon {
@@ -330,7 +351,7 @@ body {
 .card-title {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 24px !important;
   line-height: 1.4;
   letter-spacing: 0;
   margin-bottom: 1rem;
