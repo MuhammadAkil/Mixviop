@@ -5,24 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIXVOIP - Mobile Connectivity</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-    <div class="banner-container">
+  <div class="banner-container">
         <header>
             <div class="footer-logo">
-                <img src="assets/fb66327c-f0f4-4d73-866e-e1968d106fd9 1.jpg" alt="MIXVOIP Logo" class="logo-placeholder">
+                <img src="./assets/fb66327c-f0f4-4d73-866e-e1968d106fd9 1.jpg" alt="MIXVOIP Logo" class="logo-placeholder">
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Cloud PBX</a></li>
-                    <li><a href="#">Internet</a></li>
-                    <li><a href="#">Use Cases</a></li>
-                    <li><a href="itSerivces.html">Support</a></li>
+                    <li>
+                        <a href="#" class="nav-link">Home</a>
+                        <span class="hover-arrow"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Cloud PBX</a>
+                        <span class="hover-arrow"></span>
+                        <div class="mega-menu">
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-building"></i>
+                                    <h3>Small Businesses</h3>
+                                </div>
+                                <p>Services and agencies solutions</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-city"></i>
+                                    <h3>Communes</h3>
+                                </div>
+                                <p>Municipal and public admin support</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-hospital"></i>
+                                    <h3>Healthcare</h3>
+                                </div>
+                                <p>Hospitals and clinics management</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-store"></i>
+                                    <h3>Local Shops</h3>
+                                </div>
+                                <p>Retail and outlet services</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link active">Internet</a>
+                        <span class="hover-arrow active"></span>
+                        <div class="mega-menu">
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <h3>DDoS Protection</h3>
+                                </div>
+                                <p>Shield your network from attacks</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-network-wired"></i>
+                                    <h3>SD-WAN</h3>
+                                </div>
+                                <p>Interconnect your sites</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-handshake"></i>
+                                    <h3>Service Agreements</h3>
+                                </div>
+                                <p>Guaranteed service for all needs</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-users"></i>
+                                    <h3>Resale</h3>
+                                </div>
+                                <p>For integrators and operators</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Use Cases</a>
+                        <span class="hover-arrow"></span>
+                        <div class="mega-menu">
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-phone"></i>
+                                    <h3>Smart Telephony</h3>
+                                </div>
+                                <p>Explore Voxbi capabilities</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-plug"></i>
+                                    <h3>Integrations</h3>
+                                </div>
+                                <p>Connect with your tools</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-tools"></i>
+                                    <h3>Communication Tools</h3>
+                                </div>
+                                <p>Designed for meaningful talks</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <h3>Pricing</h3>
+                                </div>
+                                <p>Perfect fit for your budget</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="itSerivces.html" class="nav-link">Support</a>
+                        <span class="hover-arrow"></span>
+                    </li>
                 </ul>
             </nav>
             <button class="stay-connected">Stay Connected</button>
@@ -32,7 +137,6 @@
             <div class="breadcrumb">
                 <span>Home</span>  >  <span>Internet</span>  >  <span class="active">Mobile connectivity</span>
             </div>
-
             <div class="hero">
                 <h1>Unlock Flexible Internet Anywhere</h1>
                 <p>Mobile connectivity offers fast, reliable access where wired options fall short.</p>
@@ -46,40 +150,38 @@
                     <span class="amount">90.00 €</span>
                     <span class="period">per month</span>
                 </div>
-
                 <div class="bandwidth-section">
                     <div class="bandwidth-title">Maximum bandwidth</div>
                     <div class="shadow-line"></div>
                     <div class="bandwidth-item">
-                        <img src="assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Download: 500 Mbit/s</span>
                     </div>
                     <div class="bandwidth-item">
-                        <img src="assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Upload: 200 Mbit/s</span>
                     </div>
                 </div>
-
-                <div class="bandwidth-section">
+ <div class="bandwidth-section">
                     <div class="bandwidth-title">Typical bandwidth</div>
                     <div class="shadow-line"></div>
                     <div class="bandwidth-item">
-                        <img src="assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Download: 350 Mbit/s</span>
                     </div>
                     <div class="bandwidth-item">
-                        <img src="assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Upload: 50 Mbit/s</span>
                     </div>
                 </div>
 
                 <div class="support-section">
                     <div class="support-item">
-                        <img src="assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="support-text">Support and assistance<br>from Mon-Fri 8:00-17:00</span>
                     </div>
                     <div class="support-item">
-                        <img src="assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="support-text">Intervention within 24 hours</span>
                     </div>
                 </div>
@@ -96,11 +198,11 @@
                     <div class="bandwidth-title">Maximum bandwidth</div>
                     <div class="shadow-line"></div>
                     <div class="bandwidth-item">
-                        <img src="assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Download: 220 Mbit/s</span>
                     </div>
                     <div class="bandwidth-item">
-                        <img src="assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Upload: 30 Mbit/s</span>
                     </div>
                 </div>
@@ -109,22 +211,22 @@
                     <div class="bandwidth-title">Typical bandwidth</div>
                     <div class="shadow-line"></div>
                     <div class="bandwidth-item">
-                        <img src="assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Download: 200 Mbit/s</span>
                     </div>
                     <div class="bandwidth-item">
-                        <img src="assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Upload: 20 Mbit/s</span>
                     </div>
                 </div>
 
                 <div class="support-section">
                     <div class="support-item">
-                        <img src="assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="support-text">Support and assistance<br>from Mon-Fri 8:00-17:00</span>
                     </div>
                     <div class="support-item">
-                        <img src="assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="support-text">Intervention within 24 hours</span>
                     </div>
                 </div>
@@ -141,11 +243,11 @@
                     <div class="bandwidth-title">Maximum bandwidth</div>
                     <div class="shadow-line"></div>
                     <div class="bandwidth-item">
-                        <img src="assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Download: 220 Mbit/s</span>
                     </div>
                     <div class="bandwidth-item">
-                        <img src="assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Upload: 30 Mbit/s</span>
                     </div>
                 </div>
@@ -154,36 +256,35 @@
                     <div class="bandwidth-title">Typical bandwidth</div>
                     <div class="shadow-line"></div>
                     <div class="bandwidth-item">
-                        <img src="assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Download--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Download: 200 Mbit/s</span>
                     </div>
                     <div class="bandwidth-item">
-                        <img src="assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Upload--Streamline-Font-Awesome.svg.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="bandwidth-text">Upload: 20 Mbit/s</span>
                     </div>
                 </div>
 
                 <div class="support-section">
                     <div class="support-item">
-                        <img src="assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="support-text">Support and assistance<br>from Mon-Sun 7:30-19:00</span>
                     </div>
                     <div class="support-item">
-                        <img src="assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
+                        <img src="./assets/Group 6.png" alt="MIXVOIP Logo" class="support-icon">
                         <span class="support-text">Intervention within 6 hours</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="why-section">
+<div class="why-section">
         <h2 class="section-title">Why choose mobile connectivity?</h2>
         <div class="shadow-line2"></div>
         <div class="use-cases-grid">
             <div class="use-case-card">
                 <div class="use-case-icon laptop-icon">
-                    <img src="assets/Wifi-Laptop--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
+                    <img src="./assets/Wifi-Laptop--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
                 </div>
                 <h3>Areas lacking high-speed internet</h3>
                 <p>Ideal for locations without access to fiber or DSL, providing a stable alternative connection.</p>
@@ -191,7 +292,7 @@
 
             <div class="use-case-card">
                 <div class="use-case-icon mobile-icon">
-                    <img src="assets/Push-Notification-2--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
+                    <img src="./assets/Push-Notification-2--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
                 </div>
                 <h3>Popup stores</h3>
                 <p>Enables fast, reliable internet for transactions and operations in temporary retail setups.</p>
@@ -199,7 +300,7 @@
 
             <div class="use-case-card">
                 <div class="use-case-icon tools-icon">
-                    <img src="assets/Settings-Screwdriver--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
+                    <img src="./assets/Settings-Screwdriver--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
                 </div>
                 <h3>Construction sites</h3>
                 <p>Delivers dependable connectivity to support communication and workflow on remote job sites.</p>
@@ -207,7 +308,7 @@
 
             <div class="use-case-card">
                 <div class="use-case-icon events-icon">
-                    <img src="assets/Party-Decoration-Banner-1--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
+                    <img src="./assets/Party-Decoration-Banner-1--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
                 </div>
                 <h3>Short-term events</h3>
                 <p>Offers reliable internet access for operations and attendee needs at festivals, expos, and similar events.</p>
@@ -215,7 +316,7 @@
 
             <div class="use-case-card">
                 <div class="use-case-icon server-icon">
-                    <img src="assets/Server-2--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
+                    <img src="./assets/Server-2--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
                 </div>
                 <h3>Fallback and redundancy needs</h3>
                 <p>Serves as a reliable backup to ensure uninterrupted internet during outages or disruptions.</p>
@@ -223,7 +324,7 @@
 
             <div class="use-case-card">
                 <div class="use-case-icon network-icon">
-                    <img src="assets/App-Window-Wireless-Problem--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
+                    <img src="./assets/App-Window-Wireless-Problem--Streamline-Freehand.svg.png" alt="MIXVOIP Logo">
                 </div>
                 <h3>Extended outages</h3>
                 <p>Maintains connectivity during long disruptions caused by roadworks or cable damage.</p>
@@ -432,7 +533,7 @@
             </div>
 
             <div class="starlink-image">
-                <img src="assets/image.png" alt="Starlink satellite in orbit" class="starlink-img">
+                <img src="./assets/image.png" alt="Starlink satellite in orbit" class="starlink-img">
             </div>
         </div>
     </div>
@@ -440,7 +541,7 @@
     <div class="installation-guidelines">
         <div class="installation-content">
             <div class="starlink-dish-image">
-                <img src="assets/image (1).png" alt="Starlink dish" class="dish-img">
+                <img src="./assets/image (1).png" alt="Starlink dish" class="dish-img">
             </div>
 
             <div class="installation-text">
@@ -573,7 +674,7 @@
         <div class="footer-main">
             <div class="footer-company">
                 <div class="footer-logo">
-                    <img src="assets/fb66327c-f0f4-4d73-866e-e1968d106fd9 2.png" alt="MIXVOIP Logo" class="company-logo">
+                    <img src="./assets/fb66327c-f0f4-4d73-866e-e1968d106fd9 2.png" alt="MIXVOIP Logo" class="company-logo">
                 </div>
                 <p class="company-description">
                     Mixvoip is a trusted telecom and IT provider offering tailored internet, telephony, and cloud solutions for businesses across Luxembourg and beyond.
@@ -639,6 +740,16 @@
             </div>
         </div>
     </footer>
+    <script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });
+</script>
 </body>
 
 </html>

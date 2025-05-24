@@ -147,7 +147,7 @@
     flex-direction: column;
     width: 100%;
     min-height: 781px;
-    background-image: url("./assets/pricing-hero.png");
+    background-image: url("../assets/pricing-hero.png");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1030,7 +1030,7 @@
   
   /* Get In Touch Section */
   .footer-section {
-    background-image: url("./assets/Bg-Get-in-Touch.png");
+    background-image: url("../assets/Bg-Get-in-Touch.png");
     background-size: cover;
     background-position: center;
     color: white;
