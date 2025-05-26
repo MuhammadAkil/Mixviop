@@ -201,14 +201,13 @@ nav a {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 0px 0px;
+  padding: 0px ;
   height: 400px;
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
 }
@@ -216,7 +215,12 @@ nav a {
 .footer-questions {
   flex: 2;
   min-width: 300px;
-  padding: 94px 500px;
+  /* padding: 94px 500px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
 }
 
 .footer-questions h2 {
@@ -237,7 +241,7 @@ nav a {
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
-  width: 90%;
+  width: 100%;
 }
 
 /* Site Footer */

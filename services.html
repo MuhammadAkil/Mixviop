@@ -5,29 +5,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIXVOIP - Mobile Connectivity</title>
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body>
-    <header class="sticky-header">
-        <div class="footer-logo">
-            <img src="../assets/fb66327c-f0f4-4d73-866e-e1968d106fd9 1.jpg" alt="MIXVOIP Logo" class="logo-placeholder">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="Project.html">Cloud PBX</a></li>
-                <li><a href="#">Internet</a></li>
-                <li><a href="#">Use Cases</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
-        <button class="stay-connected">Stay Connected</button>
-    </header>
-
+<body>  
     <div class="banner-container">
+
+      <header>
+            <div class="footer-logo">
+                <img src="./assets/fb66327c-f0f4-4d73-866e-e1968d106fd9 1.jpg" alt="MIXVOIP Logo" class="logo-placeholder">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Cloud PBX</a>
+                        <span class="hover-arrow"></span>
+                        <div class="mega-menu">
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-building"></i>
+                                    <h3>Small Businesses</h3>
+                                </div>
+                                <p>Services and agencies solutions</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-city"></i>
+                                    <h3>Communes</h3>
+                                </div>
+                                <p>Municipal and public admin support</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-hospital"></i>
+                                    <h3>Healthcare</h3>
+                                </div>
+                                <p>Hospitals and clinics management</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-store"></i>
+                                    <h3>Local Shops</h3>
+                                </div>
+                                <p>Retail and outlet services</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Internet</a>
+                        <span class="hover-arrow"></span>
+                        <div class="mega-menu">
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <h3>DDoS Protection</h3>
+                                </div>
+                                <p>Shield your network from attacks</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-network-wired"></i>
+                                    <h3>SD-WAN</h3>
+                                </div>
+                                <p>Interconnect your sites</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-handshake"></i>
+                                    <h3>Service Agreements</h3>
+                                </div>
+                                <p>Guaranteed service for all needs</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-users"></i>
+                                    <h3>Resale</h3>
+                                </div>
+                                <p>For integrators and operators</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Use Cases</a>
+                        <span class="hover-arrow"></span>
+                        <div class="mega-menu">
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-phone"></i>
+                                    <h3>Smart Telephony</h3>
+                                </div>
+                                <p>Explore Voxbi capabilities</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-plug"></i>
+                                    <h3>Integrations</h3>
+                                </div>
+                                <p>Connect with your tools</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-tools"></i>
+                                    <h3>Communication Tools</h3>
+                                </div>
+                                <p>Designed for meaningful talks</p>
+                            </div>
+                            <div class="mega-menu-item">
+                                <div class="mega-menu-header">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <h3>Pricing</h3>
+                                </div>
+                                <p>Perfect fit for your budget</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="itSerivces.html" class="nav-link">Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="stay-connected">Stay Connected</button>
+        </header>
+
         <div class="centered-content">
             <div class="breadcrumb">
                 <span>Home</span>  >  <span>Internet</span>  >  <span class="active">IT Services</span>
@@ -217,13 +322,15 @@
 
     <div class="footer-section">
         <div class="footer-content">
-            <div class="footer-questions">
+            <div class="lets-talk">            <div class="footer-questions">
                 <img src="../assets/Help-Headphones-Customer-Support-Human--Streamline-Freehand.svg.png" alt="MIXVOIP Logo" class="company-logo">
                 <h4 class="consult">Talk to a consultant</h4>
                 <button type="submit" class="submit-btn">
                     Book a meeting
                 </button>
             </div>
+            </div>
+
         </div>
     </div>
 
