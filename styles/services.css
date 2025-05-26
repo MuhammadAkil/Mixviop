@@ -211,16 +211,23 @@ nav a {
   margin: 0 auto;
   gap: 40px;
 }
-
+.lets-talk{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 1200px;
+  
+}
 .footer-questions {
-  flex: 2;
-  min-width: 300px;
+  /* flex: 2; */
+  max-width: 300px;
   /* padding: 94px 500px; */
+  padding: 125px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: transparent;
+  margin: auto;
 }
 
 .footer-questions h2 {
@@ -273,7 +280,7 @@ nav a {
   max-width: 150px;
   height: auto;
   margin-bottom: 20px;
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
 .company-description {
