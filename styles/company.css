@@ -204,11 +204,15 @@ nav ul li:hover .hover-arrow {
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 48px;
   margin-bottom: 15px;
   font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
 }
-
 .hero p {
   font-size: 17px;
   max-width: 600px;
