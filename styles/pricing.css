@@ -29,132 +29,260 @@
 
 /* Sticky state when scrolled to top */
 header.sticky {
-    /* top: 0; */
-    /* border: #3d9140 0.5px solid; */
-    /* border-radius: 0 0 30px 30px; */
-    /* background-color: #333; */
-    /* opacity: 0.5; */
+  top: 0;
+  border: #3d9140 0.5px solid;
+  border-radius: 0 0 30px 30px;
 }
-  .custom-shadow {
-    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, .25), 0 15px 30px 0 rgba(0, 0, 0, .25), 0 5px 10px 0 rgba(0, 0, 0, .25), inset 0 0 100px 0 rgba(204, 215, 255, .15);
+
+/* Existing styles */
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-  .logo {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  .logo-placeholder {
-    width: 100px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .stay-connected {
-    background-color: #333333;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 400;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+.logo-placeholder {
+  width: 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  position: relative;
+}
+
+nav a.nav-link {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+/* Active nav link styling */
+nav a.nav-link:hover {
+  color: #4caf50;
+}
+
+.stay-connected {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .stay-connected:hover {
-    background-color: #312a2a;
-    
+  background-color: #312a2a;
+  
 }
-  /* Logo styling to match MIXVOIP */
-  .logo:before {
-    content: "MIX";
-    position: absolute;
-    left: 0;
-    font-weight: 700;
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .logo:after {
-    content: "VOIP";
-    position: absolute;
-    left: 40px;
-    font-weight: 700;
-    font-size: 20px;
-    color: #4caf50;
-  }
-  
-  @media (max-width: 767px) {
-    header {
+
+/* Logo styling to match MIXVOIP */
+.logo:before {
+  content: "MIX";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+}
+
+.logo:after {
+  content: "VOIP";
+  position: absolute;
+  left: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #4caf50;
+}
+
+/* Mega Menu Styles */
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  border: rgba(0, 0, 0, 0.7) 0.5px solid;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+nav ul li:hover .mega-menu {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+.mega-menu-item {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.mega-menu-item:hover {
+  background-color: #e0e0e0;
+}
+
+.mega-menu-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.mega-menu-header i {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.mega-menu-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+.mega-menu-item p {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  margin: 0;
+}
+
+/* Hover Arrow Styling */
+.hover-arrow {
+  position: absolute;
+  bottom: -10px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #3d9140;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+nav ul li .hover-arrow.active {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.2);
+}
+
+nav ul li:hover .hover-arrow {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  header {
       flex-direction: column;
       align-items: flex-start;
       padding: 15px 20px;
       border-radius: 20px;
       margin: 0 10px;
       gap: 15px;
-    }
-  
-    .logo {
+  }
+
+  header.sticky {
+      border-radius: 0;
+  }
+
+  .logo {
       justify-content: center;
       width: 100%;
-    }
-  
-    .logo-placeholder {
+  }
+
+  .logo-placeholder {
       display: none;
-    }
-  
-    .logo:before,
-    .logo:after {
+  }
+
+  .logo:before,
+  .logo:after {
       position: relative;
       font-size: 20px;
-    }
-  
-    nav {
+  }
+
+  nav {
       width: 100%;
-    }
-  
-    nav ul {
+  }
+
+  nav ul {
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
       padding-left: 0;
-    }
-  
-    nav a {
+  }
+
+  nav a {
       font-size: 16px;
-    }
-  
-    .stay-connected {
+  }
+
+  .stay-connected {
       align-self: stretch;
       text-align: center;
       width: 100%;
-    }
   }
+
+  .mega-menu {
+      width: 100%;
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .mega-menu-item {
+      width: 100%;
+  }
+
+  .hover-arrow {
+      display: none;
+  }
+}
   
   
-  /* Banner Section */
-  .banner-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 781px;
-    background-image: url("../assets/pricing-hero.png");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding-bottom: 50px;
-  }
+/* Banner Section */
+.banner-container {
+  width: 100%;
+  min-height: 800px;
+  background-image: url("../assets/pricing-hero.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   
   .hero-content {
     flex: 1;
@@ -308,7 +436,7 @@ header.sticky {
 }
 
 .plan-name {
-    background-color: #56b635;
+    background-color: #4caf50;
     color: white;
     padding: 10px;
     font-size: 16px;
